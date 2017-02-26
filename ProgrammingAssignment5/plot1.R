@@ -5,3 +5,9 @@
 summary <- readRDS("./summarySCC_PM25.rds")
 source <- readRDS("./Source_Classification_Code.rds")
 
+agg <- aggregate(Emissions ~ year, summary, sum)
+png('plot1.png')
+
+barplot(agg$Emissions, names.arg = agg$year, xlab = "Year", ylab = "PM2.5 Emissions", main = "Total PM2.5 Emissions")
+
+dev.off()
