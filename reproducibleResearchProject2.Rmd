@@ -1,0 +1,10 @@
+---
+title: "Storm Data Analysis"
+author: "Ian Stanton"
+date: "02/27/2017"
+output: html_document
+---
+
+# Synopsis
+# Data Processing
+# Results
